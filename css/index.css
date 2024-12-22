@@ -1,0 +1,51 @@
+*{
+    /* border:1px solid black; */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    border: 1px solid black;
+}
+main{
+padding: 20px;
+}
+.info{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+#logo{
+    width: 70px;
+    height: 70px;
+}
+h1{font-size: xx-large;
+color: rgb(255, 255, 255);
+background-color: blue;
+
+}
+/* cabecera montada, ahora con el article */
+/* tenemos un main y dentro del main tenemos un section y dentro del section tenemos los articles, y como va por porcentajes, voy tuneando los márgenes */
+article{
+    width: 33%;
+}
+article img{
+    width: 100%;
+
+
+}
+#seccionFotos{
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: space-around;
+    
+    /* el display flex para que todos los hijos entren, es capaz de deformar las fotos, entonces para que no las deforme y las que no entren usamos el flex wrap  */
+}
+.contenedorImg{
+    height: 290px;
+    overflow: hidden;
+   
+}
+
+/* memoria caché, cuando vuelvo a cargar la página, por mucho que cambie la hoja de estilos el navegador no me vuelve a pedir esta página por motivos de optimización, por lo
+que si quiero forzar que me vuelva a cargar el index.css tengo que, guardar los cambios y en la página ctrl+f5 */
